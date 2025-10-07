@@ -18,7 +18,7 @@ const anotherid = Symbol('123')  // symbol
 // console.log(id===anotherid);
 
 
-const bigNumber = 12345678n  //BigInt
+const bigNumber = 12345678n //BigInt
 
 
 
@@ -30,7 +30,7 @@ const bigNumber = 12345678n  //BigInt
 // 3 types : Array,Objects,Functions
 
 
-const heros = ["tania","parineeti"]  // Arrays
+const heros = ["tania","parineeti"];  // Arrays
 
 let myObj = {           // objects
     name: "rohit",
@@ -38,11 +38,38 @@ let myObj = {           // objects
 }
 
 
-const myFunction = funtion()
+const myFunction = function()
 {
     console.log("Hello world");
 }
 
 
-console.log(typeof heros);
+// console.log(typeof heros);
+
+
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++
+
+// stack (Primitive) , heap(Non primitive)
+
+let myYoutubename = "abcde.com"
+
+let anothername = myYoutubename;
+anothername = "chai aur code";
+console.log(myYoutubename)
+console.log(anothername)
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "rohit@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
 
